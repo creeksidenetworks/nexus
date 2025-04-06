@@ -47,7 +47,7 @@ interface Ethernet1/48.204
 interface Vlan140
   vrf member secure
   ip address 10.35.140.254/24
-  ip dhcp relay address 10.35.204.254
+  ip dhcp relay address 10.35.204.1
   mtu 1500
   no shutdown
   ip router ospf 204 area 35.0.0.204
@@ -56,7 +56,7 @@ interface Vlan148
   description secure-nfs
   vrf member secure
   ip address 10.35.148.254/24
-  ip dhcp relay address 10.35.204.254
+  ip dhcp relay address 10.35.204.1
   mtu 9216
   no shutdown
   ip router ospf 204 area 35.0.0.204
